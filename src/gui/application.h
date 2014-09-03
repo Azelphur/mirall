@@ -29,6 +29,7 @@
 #include "progressdispatcher.h"
 #include "clientproxy.h"
 #include "folderman.h"
+#include "sharedialog.h"
 
 class QMessageBox;
 class QSystemTrayIcon;
@@ -81,6 +82,7 @@ protected slots:
     void slotAccountChanged(Account *newAccount, Account *oldAccount = 0);
     void slotCredentialsFetched();
     void slotToggleFolderman(int state);
+    void slotShowShareDialog(const QString &path);
 
 private:
     void setHelp();

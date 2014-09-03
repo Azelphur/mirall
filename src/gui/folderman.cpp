@@ -254,6 +254,11 @@ QString FolderMan::escapeAlias( const QString& alias )
     return a;
 }
 
+SocketApi *FolderMan::socketApi()
+{
+    return this->_socketApi;
+}
+
 QString FolderMan::unescapeAlias( const QString& alias ) const
 {
     QString a(alias);
